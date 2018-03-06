@@ -1,0 +1,44 @@
+<div id="gestion_albaranes" class="container">
+    <div id="buscador">
+        <form>
+            <select name="modo" id='modo' class="form-control">
+                <option value="empieza">Empieza por</option>
+                <option value="contiene">Contiene</option>
+                <option value="acaba">Acaba por</option>
+            </select>
+            <input type="text" class="form-control" id="texto_buscar" name="texto_buscar" placeholder="Buscar albarán">
+            <select name="campo" id='campo' class="form-control">
+                <option value="nick">Nick Cliente</option>
+                <option value="fecha">Fecha</option>
+                <option value="cod_albaran">Código del albarán</option>
+                <option value="precio">Precio total</option>
+                <option value="articulo">Artículo</option>
+            </select>
+            <button type="button" name="boton_buscar" class="btn btn-primary" id="boton_buscar">
+                <img src="img/lupa.png" width="15" height="15" alt="Buscar" />
+            </button>
+        </form>
+    </div>
+    <form id="form_factura" class="form-inline">
+        <button type="button" name="boton_facturar" class="btn btn-secondary" id="boton_facturar">
+            <span>Facturar</span>
+        </button>
+        <input type="number" placeholder="Descuento" class="form-control" id="descuento_factura" min="0" max="1" step="0.01">
+    </form>
+    <div class="tabla-grande">
+        <table id="albaranes" class="table table-bordered">
+            <thead>
+            <tr>
+                <th scope="col">Código del albarán</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Concepto</th>
+                <th scope="col">Cliente</th>
+                <th scope="col">Precio total</th>
+                <th scope="col">Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>

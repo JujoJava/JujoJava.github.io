@@ -1,0 +1,35 @@
+#buscador{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+
+    margin-top:20px;
+}
+#buscador form{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+#buscador form select{
+    width:15%;
+}
+#buscador form input[type=text], #buscador form input[type=date]{
+    width:50%;
+}
+#buscador form button[type=button]{
+    width:20%;
+}
+@media(max-width:790px){
+    #buscador form{
+        flex-direction:column;
+    }
+    #buscador form select{
+        width:100%;
+    }
+    #buscador form input[type=text]{
+        width:100%;
+    }
+    #buscador form button[type=button]{
+        width:100%;
+    }
+}

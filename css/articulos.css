@@ -1,0 +1,32 @@
+#articulos{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    width:100%;
+    margin-top:10px;
+}
+#articulos .articulo{
+    margin:10px;
+    border-radius:8px;
+    background: #dadada;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+
+    min-width:20%;
+}
+#articulos .articulo .cod{
+    background: #b2b2b2;
+    width:100%;
+    border-radius:8px 8px 0 0;
+}
+#articulos .articulo button{
+    border-radius:0 0 8px 8px;
+    height:100%;
+}
+#articulos .articulo div{
+    display:flex;
+    flex-direction:column;
+}

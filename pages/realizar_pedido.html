@@ -1,0 +1,43 @@
+<div class="container" id="realizar_pedidos">
+    <div id="ver_carrito">
+        <div id="cliente_pedido">
+        </div>
+        <div class="tabla-grande">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Código del artículo</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <button type="button" name="procesar_carrito" class="btn btn-primary form-control">
+            <span>Realizar pedido</span>
+        </button>
+    </div>
+    <div id="buscador">
+        <form>
+            <select name="modo" id='modo' class="form-control">
+                <option value="empieza">Empieza por</option>
+                <option value="contiene">Contiene</option>
+                <option value="acaba">Acaba por</option>
+            </select>
+            <input type="text" class="form-control" id="texto_buscar" name="texto_buscar" placeholder="Buscar artículos">
+            <select name="campo" id='campo' class="form-control">
+                <option value="nombre">Nombre</option>
+                <option value="precio">Precio</option>
+                <option value="cod_articulo">Código</option>
+            </select>
+            <button type="button" name="boton_buscar" class="btn btn-primary" id="boton_buscar">
+                <img src="img/lupa.png" width="15" height="15" alt="Buscar" />
+            </button>
+        </form>
+    </div>
+    <div id="articulos">
+    </div>
+</div>

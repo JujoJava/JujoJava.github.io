@@ -1,0 +1,14 @@
+﻿
+# HTID:4217457: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:4217457:
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+#Rewriterule ^index.php$ index.php?page=login [L]
+Rewriterule ^$ /index.php?page=login
+
+
+</IfModule>

@@ -1,0 +1,52 @@
+<div id="solicitar" class="container">
+    <a href="index.php?page=login" id="volver">Volver</a>
+    <form id="form_valido" action="index.php" method="post">
+        <div id="solicitud_datos_personales">
+            <div>
+                <label for="dni">DNI</label>
+                <input type="text" name="dni" id="dni" class="dni requerido">
+            </div>
+            <div>
+                <label for="razon_social">Razón social</label>
+                <input type="text" name="razon_social" id="razon_social" class="requerido">
+            </div>
+            <div>
+                <label for="domicilio_social">Domicilio Social</label>
+                <input type="text" name="domicilio_social" id="domicilio_social" class="requerido">
+            </div>
+            <div>
+                <label for="ciudad">Ciudad</label>
+                <input type="text" name="ciudad" id="ciudad" class="requerido">
+            </div>
+            <div>
+                <label for="telefono">Teléfono</label>
+                <input type="text" name="telefono" id="telefono" class="telefono requerido">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="emal" id="email" class="email requerido">
+            </div>
+            <button type="button" id="continuar_solicitud" class="btn form-control">
+                <span>Continuar</span>
+            </button>
+        </div>
+        <div id="datos_logueo">
+            <div>
+                <label for="solicitud_nick">Nombre de usuario</label>
+                <input type="text" name="solicitud_nick" id="solicitud_nick" class="form-control requerido">
+            </div>
+            <div>
+                <label for="solicitud_pass">Contraseña</label>
+                <input type="password" name="solicitud_pass" id="solicitud_pass" class="form-control requerido pass">
+            </div>
+            <div id="botones">
+                <button type="button" name="reiniciar" id="boton_reinicio" class="btn btn-secondary form-control">
+                    <span>Reiniciar formulario</span>
+                </button>
+                <button type="button" name="solicitar" id="boton_envio" class="btn btn-primary form-control">
+                    <span>Enviar solicitud de registro</span>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

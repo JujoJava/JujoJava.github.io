@@ -1,0 +1,22 @@
+<div id="login" class="container">
+    <form id="form_valido" action="index.php" method="post">
+        <div id="selector_tip_login">
+            <input type="radio" checked="checked" name="tipoLogin" value="cliente" id="tip_cliente">
+            <label for="tip_cliente">Cliente</label>
+            <input type="radio" name="tipoLogin" value="gestor" id="tip_gestor">
+            <label for="tip_gestor">Gestor</label>
+        </div>
+        <div>
+            <input type="text" class="form-control requerido" name="login_nom" placeholder="Nick">
+        </div>
+        <div>
+            <input type="password" name="login_pass" class="form-control requerido" placeholder="Contraseña">
+        </div>
+        <div>
+            <button type="button" name="logueo" id="boton_envio" class="btn btn-primary form-control">
+                <span>Loguear</span>
+            </button>
+        </div>
+    </form>
+    <a href="index.php?page=registro" id="registro">Solicitar registro</a>
+</div>
